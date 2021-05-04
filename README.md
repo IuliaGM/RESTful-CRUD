@@ -14,4 +14,4 @@ Run the program by using
 $ node *(or nodemon)* index.js 
 ```
 
-## Open the paths on your localhost:8080 (or one of your choice, but do not forget to change it in __index.js__)
+#### Open the paths on your localhost:8080 (or one of your choice, but do not forget to change it in __index.js__)
