@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+  </head>
+
+  <body>
+    <h2>Add a new post</h2>
+    <form action="/posts" method="post">
+      <section>
+        <label for="user">Enter username:</label>
+        <input type="text" id="user" placeholder="username" name="user">
+      </section>
+      <section>
+        <label for="title">Enter a tile for your post:</label>
+        <br>
+        <textarea name="title" id="title" cols="30" rows="1"></textarea>
+      </section>
+      <section>
+        <label for="text">You can add the content of your post here:</label>
+        <br>
+        <textarea name="text" id="text" cols="30" rows="5"></textarea>
+      </section>
+      <button>Post</button>
+    </form>
+    <a href="/posts">Back to home</a>
+  </body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+  </head>
+
+  <body>
+    <h2>Edit your post</h2>
+    <form action="/posts/<%=singlePost.id%>?_method=PATCH" method="POST">
+      <section>
+        <h3>
+          <%=singlePost.user%>
+        </h3>
+      </section>
+      <section>
+        <label for="title">Edit title:</label>
+        <br>
+        <textarea name="title" id="title" cols="30" rows="1"><%=singlePost.title%></textarea>
+      </section>
+      <section>
+        <label for="text">Edit text:</label>
+        <br>
+        <textarea name="text" id="text" cols="30" rows="5"><%=singlePost.text%></textarea>
+      </section>
+      <button>Update</button>
+    </form>
+
+  </body>
+
+</html>
